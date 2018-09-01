@@ -1,0 +1,9 @@
+from app import manager
+
+
+if __name__ == "__main__":
+    manager.run()
+
+
+eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiMDZhYjc4MzFhZjNlZjEwY2VmMjVhMDUwZDM4NGZkZGM4ZjRhZWYxYTE1YjZkNzU0NzU5YTRjNTIxZjUxNzBkNyIsImV4cCI6MTUzNTcxNzY2MCwiaWF0IjoxNTM1NzEwNDU5fQ.PastG_mU4pWlZUURaGkXlBPqJb4AtBN24vp_7ApTPCo
+eyJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiMSIsImV4cCI6MTUzNTcxNzY5MywiaWF0IjoxNTM1NzEwNDkyfQ.vqUwlxbbF3YbhzTccdrbTayDKAhV_BmI3feQ8LRekU4
