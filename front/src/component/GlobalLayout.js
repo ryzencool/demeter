@@ -1,5 +1,6 @@
 import { Layout, Menu, Breadcrumb, Icon } from "antd";
 import React from "react";
+import MyInfo from './user/MyInfo'
 
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -24,43 +25,55 @@ export default class GloabalLayout extends React.Component {
         >
           <div className="logo" />
           <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
-            <Menu.Item key="1">
-              <Icon type="pie-chart" />
-              <span>Option 1</span>
-            </Menu.Item>
-            <Menu.Item key="2">
-              <Icon type="desktop" />
-              <span>Option 2</span>
-            </Menu.Item>
             <SubMenu
               key="sub1"
               title={
                 <span>
                   <Icon type="user" />
-                  <span>User</span>
+                  <span>个人中心</span>
                 </span>
               }
             >
-              <Menu.Item key="3">Tom</Menu.Item>
-              <Menu.Item key="4">Bill</Menu.Item>
-              <Menu.Item key="5">Alex</Menu.Item>
+              <Menu.Item key="3">我的信息</Menu.Item>
+              <Menu.Item key="4">我的任务</Menu.Item>
+              {/* <Menu.Item key="5"></Menu.Item> */}
             </SubMenu>
             <SubMenu
               key="sub2"
               title={
                 <span>
                   <Icon type="team" />
-                  <span>Team</span>
+                  <span>项目中心</span>
                 </span>
               }
             >
-              <Menu.Item key="6">Team 1</Menu.Item>
-              <Menu.Item key="8">Team 2</Menu.Item>
+              <Menu.Item key="6">项目管理</Menu.Item>
+              {/* <Menu.Item key="8">Team 2</Menu.Item> */}
             </SubMenu>
-            <Menu.Item key="9">
-              <Icon type="file" />
-              <span>File</span>
-            </Menu.Item>
+            <SubMenu
+              key="sub3"
+              title={
+                <span>
+                  <Icon type="team" />
+                  <span>接口中心</span>
+                </span>
+              }
+            >
+              <Menu.Item key="7">接口管理</Menu.Item>
+              {/* <Menu.Item key="8">Team 2</Menu.Item> */}
+            </SubMenu>
+            <SubMenu
+              key="sub4"
+              title={
+                <span>
+                  <Icon type="team" />
+                  <span>报告中心</span>
+                </span>
+              }
+            >
+              <Menu.Item key="8">报告管理</Menu.Item>
+              {/* <Menu.Item key="8">Team 2</Menu.Item> */}
+            </SubMenu>
           </Menu>
         </Sider>
         <Layout>
@@ -71,7 +84,9 @@ export default class GloabalLayout extends React.Component {
               <Breadcrumb.Item>Bill</Breadcrumb.Item>
             </Breadcrumb>
             <div style={{ padding: 24, background: "#fff", minHeight: 360 }}>
-              Bill is a cat.
+            {/* 这里添加content的信息 */}
+              {/* content */}
+              <MyInfo/>
             </div>
           </Content>
           <Footer style={{ textAlign: "center" }}>
